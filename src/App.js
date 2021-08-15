@@ -8,6 +8,7 @@ function App({ name, message }) {
         My first React app
         <h2 className="App-title">Hello World {name}</h2>
         <Message message={message} />
+        {message}
       </header>
     </div>
   );
