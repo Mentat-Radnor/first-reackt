@@ -1,14 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import Message from "./components/Message";
+import reportWebVitals from "./reportWebVitals";
 
+const name = "Vasya";
+const message = "Message, Question, Ask";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App name={name} message={message} />
+    <Message message="DAnila Gde Dengi" />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
